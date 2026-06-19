@@ -8,6 +8,6 @@ package BibliotecaView;
  *
  * @author DAMA
  */
-public class BibliotecaMVC {
+public class MenuPrincipal {
     
 }
