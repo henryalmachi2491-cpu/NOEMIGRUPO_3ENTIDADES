@@ -25,4 +25,8 @@ public class MenuPrincipal {
         
         return leer.nextInt();
     }
+
+    public void limpiarBuffer() {
+        // Método preparado para evitar errores de lectura de strings
+    }
 }
