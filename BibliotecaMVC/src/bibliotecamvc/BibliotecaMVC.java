@@ -19,12 +19,8 @@ public class BibliotecaMVC {
         do {
             opcion = vista.mostrarMenu();
             switch (opcion) {
-                case 0:
-                    System.out.println("\n>>> [MODO DESARROLLO]: Pruebas de conexión internas exitosas.");
-                       
-                    break;
+                
                 case 1:
-                    System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Libros...");
                     System.out.println("\n=== REGISTRO DE LIBRO ===");
 
                     System.out.print("ISBN: ");
@@ -42,26 +38,15 @@ public class BibliotecaMVC {
                     
                    
                 case 2:
-                    System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Usuarios...");
-                    leer.nextLine();
-
                     System.out.println("\n=== REGISTRO DE USUARIO ===");
-
                     System.out.print("Cedula: ");
                     String cedula = leer.nextLine();
-
                     System.out.print("Nombre: ");
                     String nombre = leer.nextLine();
-
                     Usuario nuevoUsuario = new Usuario(cedula, nombre);
-
                    gestion.registarUsuario(nuevoUsuario);
-                    
                     break;
                 case 3:
-                    System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Préstamos...");
-                    leer.nextLine();
-
                     System.out.println("\n=== REGISTRO DE PRESTAMO ===");
 
                     System.out.print("Codigo: ");
@@ -75,9 +60,6 @@ public class BibliotecaMVC {
                     gestion.registrarPrestamo(nuevoPrestamo);
                     break;
                 case 4:
-                    System.out.println("\n>>> [REPORTES]: Generando listados del sistema...");
-                   
-
                     System.out.println("\n===== REPORTE DE LIBROS =====");
 
                     if (gestion.getmapaLibros().isEmpty()) {
@@ -112,12 +94,11 @@ public class BibliotecaMVC {
                     System.out.println("\n>>> [SOPORTE]: Contacte al administrador del sistema.");
                     break;
                 case 6:
-                    System.out.println("\n>>> Cerrando sesión... ¡Que tenga un excelente día!");
+                    System.out.println("\n>>> Cerrando sesion... Que tenga un excelente dia");
                     break;
                 default:
-                    System.out.println("\nXXXXXXXXXXXXXX [ERROR] XXXXXXXXXXXXXX");
-                    System.out.println("Opción inválida. Por favor, digite un número del 1 al 6.");
-                    System.out.println("XXXXXXXXXXXXXXXX****************XXXXX");
+                    System.out.println("Opcion invalida. Por favor, digite un numero del 1 al 6.");
+                   
             }
         } while (opcion != 6);
     }
