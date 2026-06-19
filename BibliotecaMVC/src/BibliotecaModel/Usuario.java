@@ -12,5 +12,14 @@ public class Usuario {
 
     private String cedula;
     private String nombre;
-    
+    public Usuario(String cedula, String nombre) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return "Cedula: " + cedula +
+               ", Nombre: " + nombre;
+    }
 }

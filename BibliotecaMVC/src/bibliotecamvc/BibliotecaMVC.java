@@ -35,6 +35,7 @@ public class BibliotecaMVC {
                     String autor = leer.nextLine();
                     Libro nuevoLibro = new Libro(isbn, titulo, autor);
                     gestion.registrarLibro(isbn, nuevoLibro);
+                    
                         break;
                     
                    

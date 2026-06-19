@@ -11,18 +11,18 @@ public class MenuPrincipal {
 
     // Este método imprime las opciones en consola y captura la selección del usuario
     public int mostrarMenu() {
-        System.out.println("\n*********************************");
+        System.out.println("\n=================================");
         System.out.println("    BIENVENIDO AL SISTEMA 2026   ");
         System.out.println("    SISTEMA DE BIBLIOTECA MVC    ");
-        System.out.println("*********************************");
+        System.out.println("=====================================");
         System.out.println("1. Registrar Libro");
         System.out.println("2. Registrar Usuario");
-        System.out.println("3. Registrar Préstamo");
+        System.out.println("3. Registrar Prestamo");
         System.out.println("4. Mostrar Reportes");
         System.out.println("5. Ayuda del Sistema");
         System.out.println("6. Salir");
-        System.out.println("*********************************");
-        System.out.print("Seleccione una opción: ");
+        System.out.println("======================================");
+        System.out.print("Seleccione una opcion: ");
         
         return leer.nextInt();
     }
