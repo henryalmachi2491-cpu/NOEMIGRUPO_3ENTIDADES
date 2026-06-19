@@ -17,6 +17,9 @@ public class BibliotecaMVC {
             opcion = vista.mostrarMenu();
             
             switch (opcion) {
+                case 0:
+                    System.out.println("\n[Modo Desarrollo]: Ejecutando pruebas de conexión interna...");
+                    break;
                 case 1:
                     System.out.println("\n[Acción]: Has seleccionado Registrar Libro.");
                     break;
