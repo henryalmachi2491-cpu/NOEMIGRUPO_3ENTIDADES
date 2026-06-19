@@ -9,5 +9,7 @@ package BibliotecaModel;
  * @author DAMA
  */
 public class Prestamo {
+    private String codigo;
+    private String fecha;
     
 }

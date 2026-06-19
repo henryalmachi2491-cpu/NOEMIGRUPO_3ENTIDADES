@@ -9,5 +9,8 @@ package BibliotecaModel;
  * @author DAMA
  */
 public class Usuario {
+
+    private String cedula;
+    private String nombre;
     
 }

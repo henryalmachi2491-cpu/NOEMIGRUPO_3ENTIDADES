@@ -9,5 +9,8 @@ package BibliotecaModel;
  * @author DAMA
  */
 public class Libro {
+    private String isbn;
+    private String titulo;
+    private String autor;
     
 }
