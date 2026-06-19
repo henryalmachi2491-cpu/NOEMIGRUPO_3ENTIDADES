@@ -18,23 +18,25 @@ public class BibliotecaMVC {
             switch (opcion) {
                 case 0:
                     System.out.println("\n>>> [MODO DESARROLLO]: Pruebas de conexión internas exitosas.");
-                       System.out.println("\n=== REGISTRO DE LIBRO ===");
-
-    System.out.print("ISBN: ");
-    String isbn = leer.nextLine();
-
-    System.out.print("Titulo: ");
-    String titulo = leer.nextLine();
-
-    System.out.print("Autor: ");
-    String autor = leer.nextLine();
-
-    break;
+                       
                     break;
                 case 1:
                     System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Libros...");
+                    System.out.println("\n=== REGISTRO DE LIBRO ===");
+
+                    System.out.print("ISBN: ");
+                    String isbn = leer.nextLine();
+
+                    System.out.print("Titulo: ");
+                    String titulo = leer.nextLine();
+
+                    System.out.print("Autor: ");
+                    String autor = leer.nextLine();
+                    Libro nuevoLibro = new Libro(isbn, titulo, autor);
+
+                        break;
                     
-                    break;
+                   
                 case 2:
                     System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Usuarios...");
                     break;
