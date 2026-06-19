@@ -16,6 +16,14 @@ public class Prestamo {
         this.codigo = codigo;
         this.fecha = fecha;
     }
+    // AGREGAR ESTOS GETTERS:
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
 
     @Override
     public String toString() {
