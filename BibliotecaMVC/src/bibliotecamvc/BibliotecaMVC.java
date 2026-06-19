@@ -76,7 +76,38 @@ public class BibliotecaMVC {
                     break;
                 case 4:
                     System.out.println("\n>>> [REPORTES]: Generando listados del sistema...");
-                    break;
+                   
+
+                    System.out.println("\n===== REPORTE DE LIBROS =====");
+
+                    if (gestion.getmapaLibros().isEmpty()) {
+                    System.out.println("No existen libros registrados.");
+                    } else {
+                     for (Libro libro : gestion.getmapaLibros().values()) {
+                     System.out.println(libro);
+                    }
+                         }
+
+                    System.out.println("\n===== REPORTE DE USUARIOS =====");
+
+                    if (gestion.getListaUsuarios().isEmpty()) {
+                    System.out.println("No existen usuarios registrados.");
+                    } else {
+                    for (Usuario usuario : gestion.getListaUsuarios()) {
+                    System.out.println(usuario);
+                    }
+                        }
+                        
+                    System.out.println("\n===== REPORTE DE PRESTAMOS =====");
+
+                    if (gestion.getListaPrestamo().isEmpty()) {
+                    System.out.println("No existen prestamos registrados.");
+                    } else {
+                    for (Prestamo prestamo : gestion.getListaPrestamo()) {
+                    System.out.println(prestamo);
+                    }
+                            }
+                        break;
                 case 5:
                     System.out.println("\n>>> [SOPORTE]: Contacte al administrador del sistema.");
                     break;
