@@ -18,33 +18,33 @@ import java.util.HashMap;
 public class GestionBiblioteca {
   private HashMap<String, Libro> mapaLibros;  
   
-  private ArrayList<Usuario> ListaUsuarios;
-  private ArrayList<Prestamo> ListaPrestamo;
+  private ArrayList<Usuario> listaUsuarios;
+  private ArrayList<Prestamo> listaPrestamos;
   
   public GestionBiblioteca(){
       this.mapaLibros = new HashMap<>();
-      this.ListaUsuarios = new ArrayList<>();
-      this.ListaPrestamo = new ArrayList<>();
+      this.listaUsuarios = new ArrayList<>();
+      this.listaPrestamos = new ArrayList<>();
   }
   public void registrarLibro(String isbn, Libro libro){
       mapaLibros.put(isbn, libro);
       System.out.println("Libro guardado con exito");
   }
   public void registarUsuario(Usuario usuario){
-      ListaUsuarios.add(usuario);
+      listaUsuarios.add(usuario);
       System.out.println("Usuario guardado con exito");
   }
   public void registrarPrestamo(Prestamo prestamo){
-      ListaPrestamo.add(prestamo);
+      listaPrestamos.add(prestamo);
       System.out.println("Prestamo registrado con exito");
   }
-  public HashMap<String, Libro> getmapaLibros(){
+  public HashMap<String, Libro> getMapaLibros(){
       return mapaLibros;
   }   
   public ArrayList<Usuario> getListaUsuarios(){
-      return ListaUsuarios;
+      return listaUsuarios;
   }
-  public ArrayList<Prestamo> getListaPrestamo(){
-      return ListaPrestamo;
+  public ArrayList<Prestamo> getListaPrestamos(){
+      return listaPrestamos;
   }
 }
