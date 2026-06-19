@@ -7,15 +7,11 @@ package bibliotecamvc;
 import BibliotecaView.MenuPrincipal;
 
 public class BibliotecaMVC {
-
     public static void main(String[] args) {
         MenuPrincipal vista = new MenuPrincipal();
         int opcion;
-
-        // Bucle principal que mantiene el programa ejecutándose hasta elegir salir
         do {
             opcion = vista.mostrarMenu();
-            
             switch (opcion) {
                 case 0:
                     System.out.println("\n[Modo Desarrollo]: Ejecutando pruebas de conexión interna...");
@@ -43,7 +39,6 @@ public class BibliotecaMVC {
                     System.out.println("Opción inválida. Por favor, digite un número del 1 al 6.");
                     System.out.println("XXXXXXXXXXXXXXXX****************XXXXX");
             }
-            
         } while (opcion != 6);
     }
 }
