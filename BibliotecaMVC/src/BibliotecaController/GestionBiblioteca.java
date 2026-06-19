@@ -16,5 +16,5 @@ import java.util.HashMap;
  * @author DAMA
  */
 public class GestionBiblioteca {
-    
+  private HashMap<String, Libro> mapaLibros;  
 }
