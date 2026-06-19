@@ -14,25 +14,25 @@ public class BibliotecaMVC {
             opcion = vista.mostrarMenu();
             switch (opcion) {
                 case 0:
-                    System.out.println("\n[Modo Desarrollo]: Ejecutando pruebas de conexión interna...");
+                    System.out.println("\n>>> [MODO DESARROLLO]: Pruebas de conexión internas exitosas.");
                     break;
                 case 1:
-                    System.out.println("\n[Acción]: Has seleccionado Registrar Libro.");
+                    System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Libros...");
                     break;
                 case 2:
-                    System.out.println("\n[Acción]: Has seleccionado Registrar Usuario.");
+                    System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Usuarios...");
                     break;
                 case 3:
-                    System.out.println("\n[Acción]: Has seleccionado Registrar Préstamo.");
+                    System.out.println("\n>>> [REGISTRO]: Abriendo formulario de Préstamos...");
                     break;
                 case 4:
-                    System.out.println("\n[Acción]: Has seleccionado Mostrar Reportes.");
+                    System.out.println("\n>>> [REPORTES]: Generando listados del sistema...");
                     break;
                 case 5:
-                    System.out.println("\n[Soporte]: Para asistencia, contacte al administrador del sistema.");
+                    System.out.println("\n>>> [SOPORTE]: Contacte al administrador del sistema.");
                     break;
                 case 6:
-                    System.out.println("\nSaliendo del sistema de biblioteca... ¡Hasta luego!");
+                    System.out.println("\n>>> Cerrando sesión... ¡Que tenga un excelente día!");
                     break;
                 default:
                     System.out.println("\nXXXXXXXXXXXXXX [ERROR] XXXXXXXXXXXXXX");
