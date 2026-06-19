@@ -7,7 +7,7 @@ package BibliotecaView;
 import java.util.Scanner;
 
 public class MenuPrincipal {
-    private Scanner leer = new Scanner(System.in);
+    private  final Scanner leer = new Scanner(System.in);
 
     // Este método imprime las opciones en consola y captura la selección del usuario
     public int mostrarMenu() {
@@ -29,5 +29,6 @@ public class MenuPrincipal {
 
     public void limpiarBuffer() {
         // Método preparado para evitar errores de lectura de strings
+        leer.nextLine();
     }
 }
