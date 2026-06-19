@@ -32,6 +32,9 @@ public class BibliotecaMVC {
                 case 4:
                     System.out.println("\n[Acción]: Has seleccionado Mostrar Reportes.");
                     break;
+                case 5:
+                    System.out.println("\n[Soporte]: Para asistencia, contacte al administrador del sistema.");
+                    break;
                 case 6:
                     System.out.println("\nSaliendo del sistema de biblioteca... ¡Hasta luego!");
                     break;
@@ -39,6 +42,6 @@ public class BibliotecaMVC {
                     System.out.println("\n[ERROR]: Opción no válida. Intenta de nuevo.");
             }
             
-        } while (opcion != 6); // Se cambia a 6 para salir
+        } while (opcion != 6);
     }
 }
